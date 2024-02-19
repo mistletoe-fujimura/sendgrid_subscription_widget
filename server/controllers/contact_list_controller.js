@@ -9,7 +9,7 @@ function prepareConfirmationEmail(reqBody) {
 	const subject = "Please Confirm Your Email Address";
 	const url = formatUrl(Settings.url) + '/success';
 	const link = "<a href='" + url + "'>this link</a>"
-	const mailText = "Thanks for signing up! Click " + link + " to sign up!  This link will be active for 24 hours.";
+	const mailText = "Thanks for signing up! Click " + link + " to sign up!  This link will be active for 24 hours.\nメールマガジンへの登録申し込みありがとうございます。この" + link + "をクリックして登録を完了してください。";
 
 	var emailBody = {
 	  personalizations: [
